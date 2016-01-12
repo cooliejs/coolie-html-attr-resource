@@ -13,14 +13,15 @@ var pkg = require('./package.json');
 
 var defaults = {
     attributeName: 'data-original',
-    tagName: 'img'
+    tagName: 'img',
+    progress: 'pre-html'
 };
 
 module.exports = function (configs) {
     configs = dato.extend({}, defaults, configs);
 
     var cooliePreHTMLAttrResource = function (options) {
-        if (options.progress !== 'pre-html') {
+        if (options.progress !== configs[configs.progress]) {
             return options;
         }
 
