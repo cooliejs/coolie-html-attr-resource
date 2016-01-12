@@ -21,9 +21,11 @@ module.exports = function (configs) {
     configs = dato.extend({}, defaults, configs);
 
     var cooliePreHTMLAttrResource = function (options) {
-        if (options.progress !== configs[configs.progress]) {
+        if (options.progress !== configs.progress) {
             return options;
         }
+
+        var coolie = this;
 
         options.code = coolie.matchHTML(options.code, {
             tag: configs.tagName
