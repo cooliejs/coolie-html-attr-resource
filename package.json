@@ -2,7 +2,7 @@
   "name": "coolie-html-attr-resource",
   "version": "0.0.1",
   "private": true,
-  "description": "coolie-html-data-resource description",
+  "description": "coolie-cli middleware",
   "scripts": {},
   "preferGlobal": false,
   "bin": {},
@@ -12,6 +12,9 @@
   },
   "main": "index.js",
   "keywords": [
+    "coolie",
+    "coolie-cli",
+    "middleware",
     "cloudcome",
     "ydr.me"
   ],
@@ -21,13 +24,13 @@
     "url": "http://ydr.me"
   },
   "contributors": [],
-  "homepage": "https://github.com/cloudcome/coolie-html-data-resource",
+  "homepage": "https://github.com/cooliejs/coolie-html-attr-resource",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloudcome/coolie-html-data-resource"
+    "url": "https://github.com/cooliejs/coolie-html-attr-resource"
   },
   "bugs": {
-    "url": "https://github.com/cloudcome/coolie-html-data-resource/issues"
+    "url": "https://github.com/cooliejs/coolie-html-attr-resource/issues"
   },
   "dependencies": {
     "ydr-utils": "^40.0.1"
