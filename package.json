@@ -1,6 +1,6 @@
 {
   "name": "coolie-html-attr-resource",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "coolie-cli middleware",
   "scripts": {},
   "preferGlobal": false,
