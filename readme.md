@@ -6,13 +6,24 @@
 [![Build Status][travis-img]][travis-url] 
 [![coolie-html-attr-resource][shields-img]][shields-url]
 
-[travis-img]: https://travis-ci.org/cloudcome/coolie-html-attr-resource.svg?branch=master
-[travis-url]: https://travis-ci.org/cloudcome/coolie-html-attr-resource
+[travis-img]: https://travis-ci.org/cooliejs/coolie-html-attr-resource.svg?branch=master
+[travis-url]: https://travis-ci.org/cooliejs/coolie-html-attr-resource
 [shields-img]: https://img.shields.io/npm/v/coolie-html-attr-resource.svg
 [shields-url]: https://www.npmjs.com/package/coolie-html-attr-resource
 
 
 替换 HTML 中非标准的资源属性。
+
+
+# 场景
+```
+<img data-original="path/to/image.png">
+
+=>
+
+<img data-original="xxxxxxxxx.png">
+```
+
 
 
 # configs
