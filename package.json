@@ -2,7 +2,9 @@
   "name": "coolie-html-attr-resource",
   "version": "0.1.0",
   "description": "coolie-cli middleware",
-  "scripts": {},
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha -c --recursive --ui bdd test -t 0"
+  },
   "preferGlobal": false,
   "bin": {},
   "engines": {
@@ -35,6 +37,8 @@
     "ydr-utils": "^40.0.1"
   },
   "peerDependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
   "license": "MIT"
 }
