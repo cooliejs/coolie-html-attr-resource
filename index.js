@@ -12,7 +12,8 @@ var dato = require('ydr-utils').dato;
 var pkg = require('./package.json');
 
 var defaults = {
-    attributeName: 'data-original'
+    attributeName: 'data-original',
+    tagName: 'img'
 };
 
 module.exports = function (configs) {
@@ -23,7 +24,9 @@ module.exports = function (configs) {
             return options;
         }
 
-        options.code = coolie.matchHTML(options.code, function (node) {
+        options.code = coolie.matchHTML(options.code, {
+            tag: configs.tagName
+        }, function (node) {
             if (!node.attrs || !node.attrs[configs.attributeName]) {
                 return node;
             }
